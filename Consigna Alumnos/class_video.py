@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 
 class Video:
     def __init__(self, titulo: str, vistas: int, tiempo: int, url_youtube: str, fecha_lanzamiento: str):
@@ -23,16 +23,26 @@ class Video:
     def dividir_titulo(self):
         #Debe setear el atributo sesion y colaborador con los datos obtenidos del 
         #titulo del video
-        pass
+
+        division_titulo = self.titulo.split(" | Sesión #") 
+        colaborador = division_titulo[0]
+        sesion = int(division_titulo[1])
+        self.sesion = sesion
+        self.colaborador = colaborador
     
     def obtener_codigo_url(self):
         #Debe setear el atributo codigo_url con el codigo obtenido del atributo url_youtube
         #Por ej: si la url es https://www.youtube.com/watch?v=nicki13 
         #el codigo seria nicki13
-        pass
+        codigo = self.url_youtube.replace("https://www.youtube.com/watch?v=","")
+        self.codigo_url = codigo
     
     def formatear_fecha(self):
         #Necesitamos que la fecha de lanzamiento sea un objeto de la clase datetime (investigar).
         #Para ello deberán dividir la fecha (en formato string) en dia, mes y año y a partir de 
         #esos datos, crear la nueva fecha. 
-        pass
+
+        fecha_formateada = self.fecha_lanzamiento.split("-")
+        fecha_formateada = fecha_formateada
+        fecha_formateada = date(int(fecha_formateada[0]),int(fecha_formateada[1]),int(fecha_formateada[2]))
+        self.fecha_lanzamiento = fecha_formateada

@@ -19,6 +19,6 @@ lista_videos = [
     Video("Myke Towers | Sesión #43", 95000000, 200, "https://www.youtube.com/watch?v=myke43", "2021-09-30"),
     Video("Lunay | Sesión #47", 80000000, 205, "https://www.youtube.com/watch?v=lunay47", "2021-12-20"),
     Video("Jhay Cortez | Sesión #46", 100000000, 220, "https://www.youtube.com/watch?v=jhay46", "2021-11-30"),
-    Video("Sech | Sesión #41", 95000000, 210, "https://www.youtube.com/watch?v=sech41", "2021-08-15"),
+    Video("Sech | Sesión #41", 9500000, 210, "https://www.youtube.com/watch?v=sech41", "2021-08-15"),
     Video("Arcángel | Sesión #42", 110000000, 225, "https://www.youtube.com/watch?v=arcangel42", "2021-09-01")
 ]
