@@ -38,8 +38,8 @@ def options() -> str:
 
 def buble_sort(videos: list[Video]) -> list:
     for i in range(len(videos)):
-        for j in range(0,len(videos)):
-            if videos[i].sesion < videos[j].sesion:
+        for j in range(i,len(videos)):
+            if videos[i].sesion > videos[j].sesion:
                 videos[i], videos[j] = videos[j], videos[i]
 
 def convertir_visitas(videos: list[Video]) -> str:
